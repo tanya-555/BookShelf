@@ -1,6 +1,6 @@
 import 'package:bookshelf/model/category_model.dart';
 
-const CATEGORY_DATA  = const [
+const CATEGORY_DATA = const [
   Category(name: "Fiction", image: "assets/images/book1.jpg"),
   Category(name: "Non Fiction", image: "assets/images/book2.jpg"),
   Category(name: "Crime Thriller", image: "assets/images/book3.jpg"),
