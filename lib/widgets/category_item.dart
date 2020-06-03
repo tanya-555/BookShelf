@@ -10,15 +10,20 @@ class CategoryItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(5),
           image: new DecorationImage(
-        image: new AssetImage(_image),
-        fit: BoxFit.fill,
-      )),
+            image: new AssetImage(_image),
+            fit: BoxFit.fill,
+          )),
       child: Container(
+        alignment: Alignment.center,
         child: Text(
           _name,
           style: TextStyle(
             color: Colors.white,
+            fontWeight: FontWeight.bold,
+            fontStyle: FontStyle.italic,
+            fontSize: 30,
           ),
         ),
       ),

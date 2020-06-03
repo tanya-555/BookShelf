@@ -7,13 +7,14 @@ class Category extends StatelessWidget {
   Widget build(BuildContext context) {
     return GridView(
       children: CATEGORY_DATA
-          .map((catData) => new CategoryItem(catData.name, catData.image))
+          .map((catData) => new Container(
+                padding: EdgeInsets.all(5),
+                child: CategoryItem(catData.name, catData.image),
+              ))
           .toList(),
       gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-        maxCrossAxisExtent: 200,
-        childAspectRatio: 3 / 2,
-        crossAxisSpacing: 20,
-        mainAxisSpacing: 20,
+        maxCrossAxisExtent: 300,
+        childAspectRatio: 3 / 4,
       ),
     );
   }
