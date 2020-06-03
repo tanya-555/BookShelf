@@ -1,4 +1,4 @@
-import 'package:bookshelf/widgets/landing_screen.dart';
+import 'package:bookshelf/screens/landing_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
