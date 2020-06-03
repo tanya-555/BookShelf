@@ -4,7 +4,7 @@ class Category {
   final String name;
   final String image;
 
-  Category({
+  const Category({
     @required this.name,
     @required this.image,
   });
