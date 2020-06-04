@@ -16,7 +16,9 @@ class ListingScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text(catName),
       ),
-      body: BookList(),
+      body: BookList(
+        catId: catId,
+      ),
     );
   }
 }
