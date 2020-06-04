@@ -9,7 +9,7 @@ class Category extends StatelessWidget {
       children: CATEGORY_DATA
           .map((catData) => new Container(
                 padding: EdgeInsets.all(5),
-                child: CategoryItem(catData.name, catData.image),
+                child: CategoryItem(catData.name, catData.image, catData.id),
               ))
           .toList(),
       gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
