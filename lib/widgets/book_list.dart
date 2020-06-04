@@ -22,10 +22,13 @@ class BookList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     _makeList();
-    return ListView.builder(
-        itemBuilder: (ctx, index) {
-          return BookItem(model: bookList[index]);
-        },
-        itemCount: bookList.length);
+    return Container(
+      color: Colors.black,
+      child: ListView.builder(
+          itemBuilder: (ctx, index) {
+            return BookItem(model: bookList[index]);
+          },
+          itemCount: bookList.length),
+    );
   }
 }

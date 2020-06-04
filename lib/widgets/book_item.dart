@@ -11,7 +11,7 @@ class BookItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(5),
+      padding: EdgeInsets.all(20),
       child: Container(
         decoration: BoxDecoration(
             borderRadius: BorderRadius.only(
@@ -19,7 +19,7 @@ class BookItem extends StatelessWidget {
               topLeft: Radius.circular(10),
             ),
             border: Border.all(
-              color: Colors.black,
+              color: Colors.white,
             )),
         child: Column(
           children: <Widget>[
@@ -48,7 +48,7 @@ class BookItem extends StatelessWidget {
               child: Text(
                 model.title,
                 style: TextStyle(
-                  color: Colors.black,
+                  color: Colors.white,
                   fontSize: 18,
                   fontStyle: FontStyle.italic,
                   fontWeight: FontWeight.bold,
