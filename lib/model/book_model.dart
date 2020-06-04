@@ -8,6 +8,7 @@ class BookModel {
   final int pages;
   final String language;
   final List<int> categories;
+  final String image;
 
   const BookModel({
     @required this.title,
@@ -17,5 +18,6 @@ class BookModel {
     @required this.pages,
     @required this.language,
     @required this.categories,
+    @required this.image,
   });
 }
