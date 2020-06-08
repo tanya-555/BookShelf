@@ -196,6 +196,7 @@ const BOOK_DATA = const [
       pages: 198,
       language: "English",
       categories: [2, 5],
-      summary: "The Secret’s 10th Anniversary Edition includes a new foreword by Rhonda Byrne, and 10 of the most life-changing insights she’s had over the last 10 years of practicing and living The Secret every day. The 10 insights alone will accelerate your understanding and mastery of the law of attraction.",
+      summary:
+          "The Secret’s 10th Anniversary Edition includes a new foreword by Rhonda Byrne, and 10 of the most life-changing insights she’s had over the last 10 years of practicing and living The Secret every day. The 10 insights alone will accelerate your understanding and mastery of the law of attraction.",
       image: "assets/images/secret.jpg"),
 ];
