@@ -1,3 +1,4 @@
+import 'package:bookshelf/screens/details_screen.dart';
 import 'package:bookshelf/screens/landing_screen.dart';
 import 'package:bookshelf/screens/listing_screen.dart';
 import 'package:flutter/material.dart';
@@ -24,6 +25,7 @@ class BookShelfApp extends StatelessWidget {
         routes: {
           '/': (context) => LandingScreen(),
           ListingScreen.routeName: (context) => ListingScreen(),
+          DetailsScreen.routeName: (context) => DetailsScreen(),
         },
         onGenerateRoute: (settings) {
           return MaterialPageRoute(builder: (context) => ListingScreen());

@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 class BookList extends StatelessWidget {
   final int catId;
-  List<BookModel> bookList = [];
+  final List<BookModel> bookList = [];
 
   BookList({
     @required this.catId,
