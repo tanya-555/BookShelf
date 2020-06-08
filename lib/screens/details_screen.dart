@@ -1,4 +1,5 @@
 import 'package:bookshelf/model/book_model.dart';
+import 'package:bookshelf/widgets/details_tab.dart';
 import 'package:flutter/material.dart';
 
 class DetailsScreen extends StatelessWidget {
@@ -37,6 +38,9 @@ class DetailsScreen extends StatelessWidget {
                   topRight: Radius.circular(10),
                   topLeft: Radius.circular(10),
                 ),
+              ),
+              child: DetailsTab(
+                model: model,
               ),
             ),
           ],
