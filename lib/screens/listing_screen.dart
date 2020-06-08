@@ -2,16 +2,17 @@ import 'package:bookshelf/widgets/book_list.dart';
 import 'package:flutter/material.dart';
 
 class ListingScreen extends StatelessWidget {
-  final String catName;
-  final int catId;
+  static const routeName = '/listing';
 
-  ListingScreen({
-    @required this.catName,
-    @required this.catId,
-  });
+  String catName;
+  int catId;
 
   @override
   Widget build(BuildContext context) {
+    final routeArgs =
+        ModalRoute.of(context).settings.arguments as Map<String, Object>;
+    catName = routeArgs['name'];
+    catId = routeArgs['id'];
     return Scaffold(
       appBar: AppBar(
         title: Text(catName),

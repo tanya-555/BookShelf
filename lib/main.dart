@@ -1,4 +1,5 @@
 import 'package:bookshelf/screens/landing_screen.dart';
+import 'package:bookshelf/screens/listing_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -18,7 +19,12 @@ class BookShelfApp extends StatelessWidget {
         primarySwatch: Colors.purple,
         accentColor: Colors.deepPurpleAccent,
       ),
-      home: LandingScreen(),
+      //home: LandingScreen(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => LandingScreen(),
+        ListingScreen.routeName: (context) => ListingScreen(),
+      },
     );
   }
 }

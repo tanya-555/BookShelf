@@ -9,16 +9,10 @@ class CategoryItem extends StatelessWidget {
   CategoryItem(this.name, this.image, this.id);
 
   void _launchListingScreen(BuildContext context) {
-    Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (_) {
-          return ListingScreen(
-            catId: id,
-            catName: name,
-          );
-        },
-      ),
-    );
+    Navigator.of(context).pushNamed(ListingScreen.routeName, arguments: {
+      'name': name,
+      'id': id,
+    });
   }
 
   @override
