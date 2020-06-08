@@ -25,6 +25,16 @@ class BookShelfApp extends StatelessWidget {
         '/': (context) => LandingScreen(),
         ListingScreen.routeName: (context) => ListingScreen(),
       },
+      onGenerateRoute: (settings) {
+        return MaterialPageRoute(
+          builder: (context) => ListingScreen()
+        );
+      },
+      onUnknownRoute: (settings) {
+        return MaterialPageRoute(
+          builder: (context) => ListingScreen()
+        );
+    }
     );
   }
 }
