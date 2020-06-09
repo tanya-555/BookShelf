@@ -26,11 +26,12 @@ class BookList extends StatelessWidget {
     return Container(
       color: Colors.black,
       child: ListView.builder(
-          itemBuilder: (ctx, index) => ChangeNotifierProvider(
-                create: (ctx) => bookList[index],
-                child: BookItem(),
-              ),
-          itemCount: bookList.length),
+        itemBuilder: (ctx, index) => ChangeNotifierProvider.value(
+          value: bookList[index],
+          child: BookItem(),
+        ),
+        itemCount: bookList.length,
+      ),
     );
   }
 }

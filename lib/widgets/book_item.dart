@@ -4,7 +4,11 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class BookItem extends StatelessWidget {
-  void _launchDetailsScreen(BuildContext context) {}
+  void _launchDetailsScreen(BuildContext context, BookModel model) {
+    Navigator.of(context).pushNamed(DetailsScreen.routeName, arguments: {
+      'book_model': model,
+    });
+  }
 
   Widget _getBookmark(bool isBookmarked) {
     if (isBookmarked) {
@@ -38,23 +42,28 @@ class BookItem extends StatelessWidget {
         child: Column(
           children: <Widget>[
             Container(
-              child: ClipRRect(
-                borderRadius: BorderRadius.only(
-                    topRight: Radius.circular(10),
-                    topLeft: Radius.circular(10)),
-                child: Stack(
-                  children: <Widget>[
-                    Container(
-                      width: MediaQuery.of(context).size.width * 1,
-                      height: MediaQuery.of(context).size.height * 0.5,
-                      decoration: BoxDecoration(
-                        image: new DecorationImage(
-                          fit: BoxFit.fill,
-                          image: AssetImage(book.image),
+              child: InkWell(
+                onTap: () {
+                  _launchDetailsScreen(context, book);
+                },
+                child: ClipRRect(
+                  borderRadius: BorderRadius.only(
+                      topRight: Radius.circular(10),
+                      topLeft: Radius.circular(10)),
+                  child: Stack(
+                    children: <Widget>[
+                      Container(
+                        width: MediaQuery.of(context).size.width * 1,
+                        height: MediaQuery.of(context).size.height * 0.5,
+                        decoration: BoxDecoration(
+                          image: new DecorationImage(
+                            fit: BoxFit.fill,
+                            image: AssetImage(book.image),
+                          ),
                         ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             ),

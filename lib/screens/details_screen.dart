@@ -32,7 +32,7 @@ class DetailsScreen extends StatelessWidget {
               width: MediaQuery.of(context).size.width * 1,
               height: MediaQuery.of(context).size.height * 0.5,
               decoration: BoxDecoration(
-                color: Colors.white,
+                color: Colors.black12,
                 borderRadius: BorderRadius.only(
                   topRight: Radius.circular(10),
                   topLeft: Radius.circular(10),
