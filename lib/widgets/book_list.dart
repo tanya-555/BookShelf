@@ -2,6 +2,7 @@ import 'package:bookshelf/data/book_data.dart';
 import 'package:bookshelf/model/book_model.dart';
 import 'package:bookshelf/widgets/book_item.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class BookList extends StatelessWidget {
   final int catId;
@@ -25,9 +26,10 @@ class BookList extends StatelessWidget {
     return Container(
       color: Colors.black,
       child: ListView.builder(
-          itemBuilder: (ctx, index) {
-            return BookItem(model: bookList[index]);
-          },
+          itemBuilder: (ctx, index) => ChangeNotifierProvider(
+                create: (ctx) => bookList[index],
+                child: BookItem(),
+              ),
           itemCount: bookList.length),
     );
   }

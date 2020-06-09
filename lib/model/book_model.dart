@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class BookModel {
+class BookModel with ChangeNotifier {
   final String title;
   final String author;
   final double rating;
@@ -10,8 +10,9 @@ class BookModel {
   final String summary;
   final List<int> categories;
   final String image;
+  bool isBookmarked;
 
-  const BookModel({
+  BookModel({
     @required this.title,
     @required this.author,
     @required this.rating,
@@ -21,5 +22,11 @@ class BookModel {
     @required this.categories,
     @required this.summary,
     @required this.image,
+    this.isBookmarked,
   });
+
+  void toggleBookmark() {
+    isBookmarked = !isBookmarked;
+    notifyListeners();
+  }
 }

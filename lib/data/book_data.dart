@@ -1,12 +1,13 @@
 import 'package:bookshelf/model/book_model.dart';
 
-const BOOK_DATA = const [
+var BOOK_DATA = [
   BookModel(
       title: "1984",
       author: "George Orwell",
       rating: 4.2,
       year: 1949,
       pages: 328,
+      isBookmarked: false,
       language: "English",
       categories: [1],
       summary:
@@ -18,6 +19,7 @@ const BOOK_DATA = const [
       rating: 4.2,
       year: 2015,
       pages: 320,
+      isBookmarked: false,
       language: "English",
       categories: [1, 4],
       summary:
@@ -29,6 +31,7 @@ const BOOK_DATA = const [
       rating: 4.2,
       year: 2000,
       pages: 240,
+      isBookmarked: false,
       language: "English",
       categories: [1, 4],
       summary:
@@ -40,6 +43,7 @@ const BOOK_DATA = const [
       rating: 4.2,
       year: 2003,
       pages: 544,
+      isBookmarked: false,
       language: "English",
       categories: [1, 4],
       summary:
@@ -51,6 +55,7 @@ const BOOK_DATA = const [
       rating: 4.2,
       year: 2013,
       pages: 672,
+      isBookmarked: false,
       language: "English",
       categories: [1, 4],
       summary:
@@ -62,6 +67,7 @@ const BOOK_DATA = const [
       rating: 4.2,
       year: 2012,
       pages: 1312,
+      isBookmarked: false,
       language: "English",
       categories: [1, 4],
       summary:
@@ -73,6 +79,7 @@ const BOOK_DATA = const [
       rating: 4.1,
       year: 2012,
       pages: 432,
+      isBookmarked: false,
       language: "English",
       categories: [1, 3],
       summary:
@@ -84,6 +91,7 @@ const BOOK_DATA = const [
       rating: 3.5,
       year: 2016,
       pages: 324,
+      isBookmarked: false,
       language: "English",
       categories: [1, 3],
       summary:
@@ -95,6 +103,7 @@ const BOOK_DATA = const [
       rating: 4,
       year: 1986,
       pages: 526,
+      isBookmarked: false,
       language: "English",
       categories: [1, 3],
       summary:
@@ -106,6 +115,7 @@ const BOOK_DATA = const [
       rating: 3.9,
       year: 2015,
       pages: 416,
+      isBookmarked: false,
       language: "English",
       categories: [1, 3],
       summary:
@@ -117,6 +127,7 @@ const BOOK_DATA = const [
       rating: 4.1,
       year: 2010,
       pages: 390,
+      isBookmarked: false,
       language: "English, Hindi",
       categories: [1, 6],
       summary:
@@ -128,6 +139,7 @@ const BOOK_DATA = const [
       rating: 4.6,
       year: 2011,
       pages: 396,
+      isBookmarked: false,
       language: "English, Hindi",
       categories: [1, 6],
       summary:
@@ -139,6 +151,7 @@ const BOOK_DATA = const [
       rating: 4.6,
       year: 2013,
       pages: 565,
+      isBookmarked: false,
       language: "English, Hindi",
       categories: [1, 6],
       summary:
@@ -150,6 +163,7 @@ const BOOK_DATA = const [
       rating: 4.2,
       year: 2016,
       pages: 279,
+      isBookmarked: false,
       language: "English",
       categories: [1, 6],
       summary:
@@ -161,6 +175,7 @@ const BOOK_DATA = const [
       rating: 4.2,
       year: 1937,
       pages: 238,
+      isBookmarked: false,
       language: "English",
       categories: [2, 5],
       summary:
@@ -172,6 +187,7 @@ const BOOK_DATA = const [
       rating: 4.2,
       year: 2016,
       pages: 256,
+      isBookmarked: false,
       language: "English",
       categories: [2, 5],
       summary:
@@ -183,6 +199,7 @@ const BOOK_DATA = const [
       rating: 4.1,
       year: 1997,
       pages: 207,
+      isBookmarked: false,
       language: "English",
       categories: [2, 5],
       summary:
@@ -194,6 +211,7 @@ const BOOK_DATA = const [
       rating: 3.7,
       year: 2006,
       pages: 198,
+      isBookmarked: false,
       language: "English",
       categories: [2, 5],
       summary:
